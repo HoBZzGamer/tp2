@@ -1,31 +1,63 @@
-a:hover{
-color: lightblue;
-background-color: darkblue;
+*{
+    margin: 0px;
+}
+.grille{
+    display: grid;
+
+    grid-template-columns: 50px 50px;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 4, 1fr;
 }
 
-#asideFallout{
-    background-color: skyblue;
-    font-family: ;
+a:link {
+    color: white;
+  }
+  
+a:visited {
+    color: white;
 }
-#asideWOW{
-    background-color: lightsalmon;
-    font-family: ;
+  
+a:hover {
+    color: blue;
+}
+  
+a:active {
+    color: darkblue;
+}
 
+
+.lienGauche{
+float: inline-start;
+padding: 0.2cm;
+}
+.lienDroite{
+float: inline-end;
+padding: 0.2cm;
+}
+.nav{
+    background-color: black;
+    color: white;
+    padding: 0.2cm 0.1cm 2cm;
+    grid-column-start: 1;
+}
+
+img{
+    max-width: 350px;
+    margin: auto;
+   }
+figure{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: fit-content;
+    float: left;
+   }
+.footer{
+    background-color: grey;
+    height:2cm;
+    grid-area: co;
 }
 
 #index{
     margin: auto;
-    
-}
-.devoirDemocrate{
-    margin-left: auto;
-    display: inline-block
-
-}
-.devoirRepublicain{
-    margin-right: auto;
-}
-#navigation{
-    background-color: black;
-    color: white;
 }
