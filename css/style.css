@@ -1,1 +1,31 @@
-:hover
+a:hover{
+color: lightblue;
+background-color: darkblue;
+}
+
+#asideFallout{
+    background-color: skyblue;
+    font-family: ;
+}
+#asideWOW{
+    background-color: lightsalmon;
+    font-family: ;
+
+}
+
+#index{
+    margin: auto;
+    
+}
+.devoirDemocrate{
+    margin-left: auto;
+    display: inline-block
+
+}
+.devoirRepublicain{
+    margin-right: auto;
+}
+#navigation{
+    background-color: black;
+    color: white;
+}
