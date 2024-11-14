@@ -1,12 +1,15 @@
 *{
     margin: 0px;
 }
-.grille{
+#grille{
     display: grid;
 
-    grid-template-columns: 50px 50px;
-    grid-template-columns: 3, 1fr;
-    grid-template-rows: 4, 1fr;
+grid-template-columns: repeat(4 ,1fr)  ;
+grid-template-areas: 
+"nav nav nav nav"
+"main main main aside"
+"footer footer footer footer";
+height: 900px;
 }
 
 a:link {
@@ -24,7 +27,14 @@ a:hover {
 a:active {
     color: darkblue;
 }
+.asideFallout{
+background-color: aqua;
 
+}
+.asideWOW{
+    background-color: rgb(238, 212, 126);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .lienGauche{
 float: inline-start;
@@ -37,10 +47,13 @@ padding: 0.2cm;
 .nav{
     background-color: black;
     color: white;
-    padding: 0.2cm 0.1cm 2cm;
-    grid-column-start: 1;
+    padding: 0.2cm 0.1cm 1cm;
+    grid-area: nav;
+    max-height: fit-content;
 }
-
+.caption{
+    font-style: italic;
+}
 img{
     max-width: 350px;
     margin: auto;
@@ -55,9 +68,25 @@ figure{
 .footer{
     background-color: grey;
     height:2cm;
-    grid-area: co;
+    grid-area: footer;
+    
 }
-
+.main{
+    grid-area: main;
+}
 #index{
     margin: auto;
+}
+figure{
+    margin: 3%;
+}
+#signature{
+    float: right;
+    padding: 20px 20px 30px ;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: small;
+}
+#wowList{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: small;
 }
