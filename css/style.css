@@ -9,7 +9,7 @@ grid-template-areas:
 "nav nav nav nav"
 "main main main aside"
 "footer footer footer footer";
-height: 900px;
+height: px;
 }
 
 a:link {
